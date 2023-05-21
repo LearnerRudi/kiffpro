@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiff-Eat fresh and stop wasting food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <Nav section> -->
+    <div>
+   <img id="logo" src="data:image/png;base64,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" alt="kiff"> 
+   <h2 class="logs">KIFF</h2>
+   <button class="loginbut"><i class="fa-solid fa-user"></i>LOG IN</button>
+</div>
+       <!-- <big image with down lines> -->
+        <div>
+            <img class="bigimage" src="https://media.istockphoto.com/id/1198988703/photo/young-husband-and-wife-buying-equipment-for-their-first-kitchen-in-a-specialized-shop-with-a.jpg?s=612x612&w=0&k=20&c=G9akstl4PihaZGx0JdQdE9M8pw6zewgwrq6Stq54O70=" alt="sms">
+        </div>
+        <p class="demo">Democratizing technology for small retailers by re-innovating value chain</p>
+
+        <!-- <4 boxes with sidelines> -->
+    <div>
+        <div id="boxes">
+         <div class="boxone">
+            <h3>KYC</h3>
+            <p>Record your walk-in
+                <br> customers</p>
+         </div>
+         <div class="boxtwo">
+            <h3>Recommend</h3>
+            <p>Use AI to recommend the
+                <br> right products
+                </p>
+         </div>
+         <div class="boxthree">
+            <h3>Showcase</h3>
+            <p>Use AR to showcase
+                <br> 5000+ SKUs</p>
+         </div>
+         <div class="boxfour">
+            <h3>Remind</h3>
+            <p>Send reminders to
+                <br> convert</p>
+         </div>
+        </div>
+          <h2>Don’t lose a single
+            <br> customers
+            </h2>
+            <p>Delight customers using technology, nothing
+                <br> less than magic show</p>
+    </div>
+    <!-- <bottom section> -->
+        <div class="bottom-section">
+            <h2>
+                Open new revenue
+                <br> stream and take
+                <br> more money home
+
+            </h2>
+            <p>You deserve more; more than just margin on
+                <br> products selling</p>
+            <div class="box-section">
+                <div>
+                    <h3>Warranty</h3>
+                    <p>Make more money by
+                        <br> selling quality warranty
+                        <br> products
+                        </p>
+                </div>
+                
+                <div>
+                  <h3>EMI
+                </h3>
+                <p>Sell more & Earn more
+                    <br> through Zero Cost EMI
+                    </p>
+                </div>
+                
+                <div>
+                    <h3>Instant
+                        <br>Settlement</h3>
+                        <p>No Hold, Direct <br>Processing</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
